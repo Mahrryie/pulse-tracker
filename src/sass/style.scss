@@ -1,0 +1,17 @@
+@import 'base/fonts';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/button';
+
+*{
+    font-family: "Museo Sans", sans-serif;
+}
+a{
+    color: inherit;
+}
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
