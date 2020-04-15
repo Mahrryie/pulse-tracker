@@ -3,5 +3,28 @@
     background-color: $main-color;
     border: none;
     cursor: pointer;
-    
+    color: #ffffff;
+    text-transform: uppercase;
+    &__feed-form{
+        padding: 20px 35px;
+        margin-top: 20px;
+    }
+    &__header{
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        color: #ffffff;
+        text-align: right;
+        margin-top: 5px;
+        &:hover{
+            opacity: .8;
+        }
+    }
+    &__promo{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 20px 40px;
+        margin-top: 85px;
+    }
 }

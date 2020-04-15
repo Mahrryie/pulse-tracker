@@ -26,18 +26,6 @@
             color: #ffffff;
         }
     }
-    &__button{
-        font-weight: 500;
-        font-size: 12px;
-        text-transform: uppercase;
-        padding: 10px 20px;
-        color: #ffffff;
-        text-align: right;
-        margin-top: 5px;
-        &:hover{
-            opacity: .8;
-        }
-    }
     &__contacts{
         display: flex;
         flex-direction: column;

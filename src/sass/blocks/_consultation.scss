@@ -1,0 +1,16 @@
+.consultation{
+    padding: 100px 0px 90px;
+    background: url('../images/background-form.png') center (center / cover) no-repeat;
+    &__title{
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__description{
+        margin-top: 80px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
