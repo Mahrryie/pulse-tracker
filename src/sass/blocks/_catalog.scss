@@ -1,0 +1,42 @@
+.catalog{
+    &__tabs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    &__tab{
+        color: #6b6b6b;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border: 2px solid #d0d0d0;
+        transform: skewX(-20deg);
+        padding: 15px 70px;
+        cursor: pointer;
+        margin: 0px 10px;
+        transition: .3s all;
+        &_active{
+            border: 2px solid $main-color;
+            background-color: $main-color;
+            color: #ffffff;
+        }
+        &:hover{
+            box-shadow:3px 3px 20px $main-color;
+            border: none;
+        }
+        a{
+            display: block;
+            transform: skewX(20deg);
+            &:hover{
+                color: inherit;
+            }
+        }
+    }
+    &__content{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

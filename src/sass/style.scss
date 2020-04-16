@@ -9,9 +9,16 @@
 @import 'blocks/consultation';
 @import 'blocks/_feed-form';
 @import 'blocks/_slider';
+@import 'blocks/catalog';
+@import 'blocks/catalog-item';
 
 *{
+    margin: 0;
+    padding: 0;
     font-family: "Museo Sans", sans-serif;
+}
+p{
+    margin: 0;
 }
 a{
     color: inherit;
