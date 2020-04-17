@@ -11,14 +11,17 @@
 @import 'blocks/_slider';
 @import 'blocks/catalog';
 @import 'blocks/catalog-item';
+@import 'blocks/_reviews';
+@import 'blocks/_footer';
 
 *{
     margin: 0;
     padding: 0;
     font-family: "Museo Sans", sans-serif;
 }
-p{
+p, ul, ol{
     margin: 0;
+    list-style: none;
 }
 a{
     color: inherit;
