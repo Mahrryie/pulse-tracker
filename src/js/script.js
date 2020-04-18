@@ -32,4 +32,38 @@ $(document).ready(function(){
 
     toggleCatalogItem('.catalog-item__link');
     toggleCatalogItem('.catalog-item__back');
+
+    //modal
+
+    $('[data-modal="consultation"]').on('click', function(){
+        $('.overlay, #consultation').fadeIn();
+    });
+
+    $('div.modal__close').on('click', function(){
+        $('.overlay, #consultation, #buy, #thanks').fadeOut();
+    });
+
+    $('[data-modal="buy"]').each(function(i){
+        $(this).on('click', function(){
+            $('.overlay, #buy').fadeIn();
+            $('.modal__description_model').text($('.catalog-item__caption').eq(i).text());
+        });
+    });
+
+    $('input[name="phone"]').mask("+375(99)999-99-99");
+
+    $('form').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val("");
+            $('#consultation, #buy').fadeOut();
+            $('.overlay, #thanks').fadeIn();
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });

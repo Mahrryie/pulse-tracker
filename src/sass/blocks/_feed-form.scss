@@ -31,5 +31,11 @@
     }
     &__name{
         margin-top: 40px;
+        &_modal{
+            margin-top:15px;
+        }
+    }
+    &__modal{
+        width:100%;
     }
 }
