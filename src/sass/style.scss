@@ -1,4 +1,5 @@
 @import 'base/fonts';
+@import 'base/_animation';
 @import 'base/mixins';
 @import 'base/variables';
 @import 'blocks/promo';
@@ -14,6 +15,8 @@
 @import 'blocks/_reviews';
 @import 'blocks/_footer';
 @import 'blocks/_modal';
+@import 'blocks/_page-up';
+@import 'blocks/map';
 
 *{
     margin: 0;

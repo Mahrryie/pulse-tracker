@@ -25,7 +25,7 @@ $(document).ready(function(){
             $(this).on('click', function(e){
                 e.preventDefault();
                 $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-                $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+                $('.catalog-item__list-wrapper').eq(i).toggleClass('catalog-item__list-wrapper_active');
             });
         });
     }
@@ -66,4 +66,20 @@ $(document).ready(function(){
         });
         return false;
     });
+
+    //smooth scroll
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 1600){
+            $('.page-up').fadeIn();
+        }else{
+            $('.page-up').fadeOut();
+        } 
+    });
+        $("a[href^='#']").click(function(){
+            var _href = $(this).attr("href");
+            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            return false;
+    });
+    new WOW().init();
+
 });
