@@ -5,7 +5,15 @@
         margin: 0 auto;
         position: relative;
     }
+    &__image{
+        width:80%;
+    }
     .slick {
+        &-slide{
+            img {
+                width:100%;
+            }
+        }
         &-prev,
         &-next{
             border: none;

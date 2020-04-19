@@ -28,7 +28,8 @@ gulp.task('styles', function(){
             cascade: false
          }))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest("dist/css"))
+        // .pipe(gulp.dest("dist/css"))
+        .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
 });
 
